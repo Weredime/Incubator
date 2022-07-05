@@ -3,10 +3,10 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const TitleAndMetaTags = ({
-    url = 'https://stitches.dev',
+    url = 'https://beta.itinerary.eu.org',
     pathname,
-    title = 'Stitches',
-    description = 'CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience, by Modulz.',
+    title = 'Incubator — Scratch Experiments',
+    description = 'Incubator is a platform for Scratch experiments.',
     poster,
 }) => {
     const router = useRouter();
@@ -19,16 +19,12 @@ const TitleAndMetaTags = ({
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="viewport" content="width=device-width" />
-            <link rel="icon" href="/favicon.ico" />
-            <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+            <link rel="icon" href="/incubator.svg" type="image/svg+xml" />
 
             <meta property="og:url" content={`${url}${path}`} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
-
-            <meta name="twitter:site" content="@stitchesjs" />
-            <meta name="twitter:card" content="summary_large_image" />
         </Head>
     );
 };
