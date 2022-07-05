@@ -5,10 +5,9 @@ export const renameProp = (oldProp, newProp, { [oldProp]: old, ...others }) => (
     ...others,
 });
 
-
 /**
  * Clone an object
- * @param {Object} obj 
+ * @param {Object} obj
  * @returns {Object} The cloned object.
  */
 export const copyObject = (obj) => {

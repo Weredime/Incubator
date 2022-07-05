@@ -7,7 +7,6 @@ export const sessionOptions = {
     },
 };
 
-
 export const databaseCollections = {
     users: 'users',
     'scratch-jams': 'jams',

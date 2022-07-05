@@ -6,4 +6,4 @@
 export default function withDefaults(component, defaultProps) {
     component.defaultProps = defaultProps;
     return component;
-};
+}

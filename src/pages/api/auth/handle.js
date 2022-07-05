@@ -8,9 +8,9 @@ export default withIronSessionApiRoute(async (req, res) => {
     const client = await clientPromise;
     const Database = client.db();
 
-    // The user is back from Hampton's authentication service
-    const {privateCode} = req.query;
-    const websiteURL = process.env.WEBSITE_URL;
+    // The user is back from our authentication service
+    const { privateCode } = req.query;
+    const websiteURL = process.env.WEBSITE_URL; // todo: get this from the header "Host"
 
     let authResponse = await fetch('https://auth.itinerary.eu.org/api/auth/verifyToken?privateCode=' + privateCode).catch((e) => {
         console.log(e);

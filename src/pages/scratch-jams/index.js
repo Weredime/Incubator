@@ -182,7 +182,7 @@ export default function ScratchGameJams() {
                                             checked={filters['organization']}
                                             onCheckedChange={() => updateFilters('organization', true)}
                                             id="filter-organization"
-                                            disabled={true/* user === undefined || user?.isLoggedIn === false */}
+                                            disabled={true /* user === undefined || user?.isLoggedIn === false */}
                                         >
                                             <CheckboxIndicator>
                                                 {filters['organization'] === 'indeterminate' && <DividerHorizontalIcon width={24} height={24} />}
@@ -198,7 +198,7 @@ export default function ScratchGameJams() {
                                             checked={filters['participation']}
                                             onCheckedChange={() => updateFilters('participation', true)}
                                             id="filter-participation"
-                                            disabled={true/* user === undefined || user?.isLoggedIn === false */}
+                                            disabled={true /* user === undefined || user?.isLoggedIn === false */}
                                         >
                                             <CheckboxIndicator>
                                                 {filters['participation'] === 'indeterminate' && <DividerHorizontalIcon width={24} height={24} />}
